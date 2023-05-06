@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FileCleaner": {
+      "commandName": "Project",
+      "commandLineArgs": "time"
+    }
+  }
+}
