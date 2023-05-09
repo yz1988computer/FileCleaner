@@ -2,7 +2,7 @@
   "profiles": {
     "FileCleaner": {
       "commandName": "Project",
-      "commandLineArgs": "time"
+      "commandLineArgs": "time --configPath d:\\temp\\config.json"
     }
   }
 }

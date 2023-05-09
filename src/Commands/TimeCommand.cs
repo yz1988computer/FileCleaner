@@ -18,7 +18,7 @@ internal class TimeCommand : Command<TimeCommandOptions>
     public override int Execute(CommandContext context
         , [NotNull] TimeCommandOptions settings)
     {
-        var config = ConfigHelper.GetConfig<TimeConfig>()!.Config;
+        var config = ConfigHelper.GetConfig<TimeConfig>(settings.ConfigPath)!.Config;
         MergeConfig(config, settings);
         var paths = config.Paths.Split(StringSplit.Semicolon
             , StringSplitOptions.RemoveEmptyEntries);

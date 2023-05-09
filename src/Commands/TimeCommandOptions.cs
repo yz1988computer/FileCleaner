@@ -17,4 +17,8 @@ internal class TimeCommandOptions : CommandSettings
     [Description("是否递归处理路径下的文件夹，默认为false")]
     [CommandOption("--rec")]
     public bool? Recursion { get; set; }
+
+    [Description("使用的json配置文件路径")]
+    [CommandOption("--configPath")]
+    public string ConfigPath { get; set; }
 }
